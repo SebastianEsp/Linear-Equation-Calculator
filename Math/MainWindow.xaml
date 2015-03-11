@@ -1,0 +1,38 @@
+﻿<Window x:Class="Math.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="MainWindow" Height="350" Width="533" ResizeMode="NoResize">
+    <Grid>
+        <Grid Margin="10,90,264,0">
+            <xctk:WatermarkTextBox x:Name="txtBox_a" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Watermark="a=" VerticalAlignment="Top" Width="120"/>
+            <xctk:WatermarkTextBox x:Name="txtBox_b" HorizontalAlignment="Left" Height="23" Margin="0,38,0,0" TextWrapping="Wrap" Watermark="b=" VerticalAlignment="Top" Width="120" TextChanged="txtBox_b_TextChanged"/>
+            <xctk:WatermarkTextBox x:Name="txtBox_x1" HorizontalAlignment="Left" Height="23" Margin="0,76,0,0" TextWrapping="Wrap" Watermark="x1=" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btn_a" Content="Beregn a" HorizontalAlignment="Left" Margin="150,0,0,0" VerticalAlignment="Top" Width="85" Height="23" Click="btn_a_Click"/>
+            <Button x:Name="btn_b" Content="Bergen b" HorizontalAlignment="Left" Margin="150,38,0,0" VerticalAlignment="Top" Width="85" Height="23" Click="btn_b_Click"/>
+            <xctk:WatermarkTextBox x:Name="txtBox_x2" HorizontalAlignment="Left" Height="23" Margin="0,114,0,0" TextWrapping="Wrap" Watermark="x2=" VerticalAlignment="Top" Width="120"/>
+            <xctk:WatermarkTextBox x:Name="txtBox_y1" HorizontalAlignment="Left" Height="23" Margin="0,152,0,0" TextWrapping="Wrap" Watermark="y1=" VerticalAlignment="Top" Width="120"/>
+            <xctk:WatermarkTextBox x:Name="txtBox_y2" HorizontalAlignment="Left" Height="23" Margin="0,189,0,0" TextWrapping="Wrap" Watermark="y2=" VerticalAlignment="Top" Width="120"/>
+            <Label Content="x1" HorizontalAlignment="Left" Margin="150,76,0,0" VerticalAlignment="Top" Height="33" Width="85"/>
+            <Label Content="x2" HorizontalAlignment="Left" Margin="150,114,0,0" VerticalAlignment="Top" Height="33" Width="85"/>
+            <Label Content="y1" HorizontalAlignment="Left" Margin="150,152,0,0" VerticalAlignment="Top" Height="32" Width="85"/>
+            <Label Content="y2" HorizontalAlignment="Left" Margin="150,189,0,0" VerticalAlignment="Top" Height="33" Width="85"/>
+
+        </Grid>
+        <Grid Margin="10,10,0,273">
+            <TextBox x:Name="txtBox_function" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="f(x)=" VerticalAlignment="Top" Width="407" FontSize="18" TextChanged="txtBox_function_TextChanged"/>
+            <Button x:Name="btn_Calc" Content="Calc" HorizontalAlignment="Left" Margin="422,0,0,0" VerticalAlignment="Top" Width="77" Height="29" FontSize="18" Click="btn_Calc_Click"/>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="168" Margin="274,144,0,0" VerticalAlignment="Top" Width="203" Source="Content/LVNote.png"/>
+        <Grid Margin="10,46,234,237">
+            <TextBox x:Name="txtBox_Points1" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="(x.y)" VerticalAlignment="Top" Width="155" FontSize="18" TextChanged="txtBox_Points1_TextChanged"/>
+            <Button x:Name="btn_CalcPoints2" Content="Calc" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Top" Width="75" Height="29" FontSize="18" Click="btn_CalcPoints2_Click"/>
+        </Grid>
+        <Grid Margin="260,46,0,237">
+            <TextBox x:Name="txtBox_Points2" HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" Text="(x.y)" VerticalAlignment="Top" Width="155" FontSize="18" TextChanged="txtBox_Points2_TextChanged"/>
+            <Button x:Name="btn_CalcPoints1" Content="Calc" HorizontalAlignment="Left" Margin="170,0,0,0" VerticalAlignment="Top" Width="79" Height="29" FontSize="18" Click="btn_CalcPoints1_Click"/>
+        </Grid>
+        <TextBox x:Name="txtBox_Result" HorizontalAlignment="Left" Height="33" Margin="255,90,0,0" TextWrapping="Wrap" Text="f(x)=" VerticalAlignment="Top" Width="160" FontSize="18" TextChanged="txtBox_Result_TextChanged"/>
+        <Button x:Name="btn_CalcFx" Content="Result" HorizontalAlignment="Left" Margin="430,90,0,0" VerticalAlignment="Top" Width="79" Height="29" FontSize="18" Click="btn_CalcFx_Click"/>
+    </Grid>
+</Window>
